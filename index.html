@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <hr />
+
+        <form id="expense-form" novalidate>
+            <div class="input-group">
+                <label for="amount">Enter Amount here.</label>
+                <div class="field">
+                    <span>$</span>
+                    <input type="number" id="amount" name="amount" required />
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="category">Choose a category.</label>
+                <div class="field">
+                    <span>^</span>
+                    <select id="category" name="category" required>
+                        <option value="">Choose...</option>
+                        <option value="Food and Drinks">Food and Drinks</option>
+                        <option value="Groceries">Groceries</option>
+                        <option value="Shopping">Shopping</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Entertainment">Entertainment</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="desc">Enter Description here.</label>
+                <div class="field">
+                    <span>@</span>
+                    <input type="text" id="desc" name="desc" required />
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Add Expense</button>
+        </form>
+
+        <div id="card-container">
+            <h3>Add New Expense..</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
